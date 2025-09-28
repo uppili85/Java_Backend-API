@@ -25,3 +25,16 @@ spring.data.mongodb.host=localhost
 
 ## **Running application**
 mvn spring-boot:run
+
+
+## REST API Endpoints
+
+- **Create Task**: `PUT /tasks`  
+  Request JSON body:  
+  ```json
+  {
+    "id": "123",
+    "name": "Print Hello",
+    "owner": "John Smith",
+    "command": "echo Hello World"
+  }
